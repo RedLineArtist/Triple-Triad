@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Triple Triad (HTML5)
 
-## Getting Started
+Triple Triad is a card game from _Final Fantasy VIII_. This project implements
+only the game itself, with all rule types and basic AI.
 
-First, run the development server:
+**[Play it here!](http://itdelatrisu.github.io/triple-triad-html5/)**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+For a list of rules and gameplay instructions,
+[read here](http://finalfantasy.wikia.com/wiki/Triple_Triad).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Controls
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+In addition to mouse input, the following keys are supported:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **Movement**: arrow keys
+- **Select**: Z or Enter
+- **Unselect**: X or Backspace
+- **New Game**: F5
+- **Automatic Move**: F1
+- **Pause**: Esc
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Credits
 
-## Learn More
+This software was created by Jeffrey Han
+([@itdelatrisu](https://github.com/itdelatrisu/)). The original Java
+project can be found [here](https://github.com/itdelatrisu/triple-triad).
+All game concepts and designs are based on work by Square Enix, and music is
+property of Squre Enix.
 
-To learn more about Next.js, take a look at the following resources:
+Game images used in this project are part of FFVIII mods by MCINDUS:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tripod v1.1](http://forums.qhimm.com/index.php?topic=15301.0)
+- [SeeD Reborn v3.2](http://forums.qhimm.com/index.php?topic=15320.0)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Character sprites were created by
+[UltimeciaFFB](http://ultimeciaffb.deviantart.com/), and icons are part of the
+[Web0.2ama](http://chrfb.deviantart.com/art/Web0-2ama-165156124) pack by chrfb.
+Sound effects were extracted by
+[TekkamanChronos](http://www.youtube.com/watch?v=xKzxcJLiitQ).
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**This software is licensed under GNU GPL version 3.**
+You can find the full text of the license [here](LICENSE).
