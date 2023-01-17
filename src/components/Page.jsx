@@ -1,12 +1,13 @@
+import Footer from "@/components/Footer"
 import Header from "./Header"
 
 const Page = (props) => {
   const { children } = props
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex grow flex-col w-full">{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

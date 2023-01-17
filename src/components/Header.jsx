@@ -1,8 +1,14 @@
+import BurgerMenu from "@/components/BurgerMenu"
+import Image from "@/components/ImageComponent"
+
 const Header = () => {
   return (
-    <header className="flex bg-blue-600">
-      <div className="text-xl m-2 ">Triple Triad</div>
-      <div className="text-2xl mr-2 ml-auto mt-1">☰</div>
+    <header className="overflow-auto flex justify-between bg-blue-600">
+      <BurgerMenu />
+      <div>
+        <Image src="/images/logo/TripleTriadLogo.png" className="w-36 h-16" />
+      </div>
+      <h1 className="text-xl text-center m-3">Triple Triad</h1>
     </header>
   )
 }

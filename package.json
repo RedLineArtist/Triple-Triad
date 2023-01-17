@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "triple",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.13",
     "axios": "^1.2.2",
+    "classnames": "^2.3.2",
     "next": "13.1.1",
     "prettier": "^2.8.2",
     "react": "18.2.0",
