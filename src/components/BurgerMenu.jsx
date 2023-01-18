@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react"
-// import { Bars3Icon } from "@heroicons/react/24/solid"
+import { Bars3Icon } from "@heroicons/react/24/solid"
 import Link from "@/components/Link"
 import classNames from "classnames"
 
@@ -18,9 +18,13 @@ const BurgerMenu = () => {
   }, [])
 
   return (
-    <div className="mr-2 ml-auto">
-      <button onClick={handle} className="text-3xl cursor-pointer">
-        ☰
+    <div>
+      <button
+        onClick={handle}
+        className="text-3xl
+        cursor-pointer"
+      >
+        <Bars3Icon className="w-6 h-6 m-4" />
       </button>
       <ul
         className={classNames(

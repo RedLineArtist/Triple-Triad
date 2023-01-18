@@ -12,7 +12,7 @@ const cardsCollection = () => {
         JSON.stringify(await axios("https://triad.raelys.com/api/cards"))
       )
 
-      setCards(result.results)
+      https: setCards(result.results)
     })()
   }, [setCards])
 
