@@ -1,8 +1,10 @@
+import BurgerMenu from "./BurgerMenu"
+
 const Header = () => {
   return (
     <header className="flex bg-blue-600">
-      <div className="text-xl m-2 ">Triple Triad</div>
-      <div className="text-2xl mr-2 ml-auto mt-1">☰</div>
+      <img src="" alt="#" className="w-6 h-6" />
+      <BurgerMenu />
     </header>
   )
 }

@@ -5,7 +5,7 @@ const Page = (props) => {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex grow flex-col w-full">{children}</main>
+      <main className="flex grow flex-col w-full bg-cyan-200">{children}</main>
       {/* <Footer /> */}
     </div>
   )

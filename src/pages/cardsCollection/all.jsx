@@ -17,16 +17,23 @@ const cardsCollection = () => {
   }, [setCards])
 
   if (!cards) {
-    return <div className="">LOADING...</div>
+    return (
+      <Page>
+        <div className="m-auto text-4xl">LOADING...</div>
+      </Page>
+    )
   }
 
   return (
     <Page>
-      <div className="grid grid-cols-3 mx-auto">
+      <h1 className="text-xl mb-4 mt-2 ml-2 font-bold">
+        Cards Collection (326)
+      </h1>
+      <div className="grid grid-cols-3 mx-auto md:grid-cols-5 w-full">
         {cards.map((card) => (
-          <div className="mb-2" key={card.id}>
+          <div className="mb-2 mx-auto" key={card.id}>
             <Link href={`/cards/${card.id}`}>
-              <h1>{card.name}</h1>
+              <h2 className="truncate w-28 text-lg">{card.name}</h2>
               <img src={`${card.image}`} />
             </Link>
           </div>
