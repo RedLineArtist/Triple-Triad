@@ -1,7 +1,7 @@
-import Test from "@/components/test"
+import CardCollectionSorting from "@/components/ CardCollectionSorting"
 
 const oneStars = () => {
-  return Test(1)
+  return CardCollectionSorting(1)
 }
 
 export default oneStars

@@ -5,10 +5,10 @@ import classNames from "classnames"
 
 const links = [
   { children: "1 ⭐️", href: "/oneStars" },
-  { children: "2 ⭐️", href: "/" },
-  { children: "3 ⭐️", href: "/" },
-  { children: "4 ⭐️", href: "/" },
-  { children: "5 ⭐️", href: "/" },
+  { children: "2 ⭐️", href: "/twoStars" },
+  { children: "3 ⭐️", href: "/threeStars" },
+  { children: "4 ⭐️", href: "/fourStars" },
+  { children: "5 ⭐️", href: "/fiveStars" },
 ]
 
 const BurgerMenu = () => {
@@ -28,7 +28,7 @@ const BurgerMenu = () => {
       </button>
       <ul
         className={classNames(
-          "flex flex-col fixed top-[54px] bottom-6 bg-blue-600 left-0 pl-6 transition-all duration-500 z-50 ease-in",
+          "flex flex-col fixed top-[64px] bottom-6 bg-purple-800 left-0 pl-6 transition-all duration-500 z-50 ease-in",
           { "-left-full": !menuOpen }
         )}
       >

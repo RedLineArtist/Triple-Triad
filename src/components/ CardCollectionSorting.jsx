@@ -3,7 +3,7 @@ import axios from "axios"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-const Test = (stars) => {
+const CardCollectionSorting = (stars) => {
   const [cards, setCards] = useState(null)
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const Test = (stars) => {
   )
 }
 
-export default Test
+export default CardCollectionSorting

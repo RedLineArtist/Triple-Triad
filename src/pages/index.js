@@ -1,3 +1,4 @@
+import Page from "@/components/Page"
 import axios from "axios"
 import { useState } from "react"
 
@@ -16,7 +17,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <Page>
       <input placeholder="Card id" onKeyUp={handleKeyUp} />
       {!card ? (
         <h1>No Card</h1>
@@ -26,7 +27,7 @@ const App = () => {
           <img className="p-1 m-1" src={`${card.image}`} />
         </>
       )}
-    </div>
+    </Page>
   )
 }
 
