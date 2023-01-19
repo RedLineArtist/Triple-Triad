@@ -1,8 +1,10 @@
+import BurgerMenu from "@/components/BurgerMenu"
+
 const Header = () => {
   return (
-    <header className="flex bg-blue-600">
+    <header className="flex justify-between bg-blue-600">
+      <BurgerMenu />
       <div className="text-xl m-2 ">Triple Triad</div>
-      <div className="text-2xl mr-2 ml-auto mt-1">☰</div>
     </header>
   )
 }
