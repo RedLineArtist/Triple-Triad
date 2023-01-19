@@ -4,11 +4,11 @@ import Link from "@/components/Link"
 import classNames from "classnames"
 
 const links = [
-  { children: "1 ⭐️", href: "/" },
-  { children: "2 ⭐️", href: "/" },
-  { children: "3 ⭐️", href: "/" },
-  { children: "4 ⭐️", href: "/" },
-  { children: "5 ⭐️", href: "/" },
+  { children: "1 ⭐️", href: "/oneStars" },
+  { children: "2 ⭐️", href: "/twoStars" },
+  { children: "3 ⭐️", href: "/threeStars" },
+  { children: "4 ⭐️", href: "/fourStars" },
+  { children: "5 ⭐️", href: "/fiveStars" },
 ]
 
 const BurgerMenu = () => {
@@ -22,20 +22,20 @@ const BurgerMenu = () => {
       <button
         onClick={handle}
         className="text-3xl
-        cursor-pointer md:hidden "
+        cursor-pointer"
       >
-        <Bars3Icon className="w-6 h-6 m-3" />
+        <Bars3Icon className="w-6 h-6 m-4" />
       </button>
       <ul
         className={classNames(
-          "flex flex-col fixed top-[54px] bottom-6 bg-blue-600 left-0 pl-6 transition-all duration-500 z-50 ease-in",
+          "flex flex-col fixed top-[64px] bottom-6 bg-purple-800 left-0 pl-6 transition-all duration-500 z-50 ease-in",
           { "-left-full": !menuOpen }
         )}
       >
         {links.map((linkProps) => (
           <li
             key={linkProps.href}
-            className="mr-4
+            className="mr-4 p-2
             text-xl md:my-0 my-7"
           >
             <Link className="text-white" {...linkProps} />

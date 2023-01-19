@@ -3,15 +3,16 @@ import axios from "axios"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-const cardsCollection = () => {
+const CardCollectionSorting = (stars) => {
   const [cards, setCards] = useState(null)
 
   useEffect(() => {
     ;(async () => {
       const { data: result } = JSON.parse(
-        JSON.stringify(await axios("https://triad.raelys.com/api/cards"))
+        JSON.stringify(
+          await axios(`https://triad.raelys.com/api/cards?stars_in=${stars}`)
+        )
       )
-
       https: setCards(result.results)
     })()
   }, [setCards])
@@ -36,4 +37,4 @@ const cardsCollection = () => {
   )
 }
 
-export default cardsCollection
+export default CardCollectionSorting

@@ -1,3 +1,4 @@
+import Page from "@/components/Page"
 import axios from "axios"
 import { useState } from "react"
 
@@ -16,17 +17,17 @@ const App = () => {
   }
 
   return (
-    <div>
-      <input placeholder="id" onKeyUp={handleKeyUp} />
+    <Page>
+      <input placeholder="Card id" onKeyUp={handleKeyUp} />
       {!card ? (
         <h1>No Card</h1>
       ) : (
         <>
-          <h1>{card.name}</h1>
-          <img src={`${card.image}`} />
+          <h1 className="p-2 m-1 italic">{card.name}</h1>
+          <img className="p-1 m-1" src={`${card.image}`} />
         </>
       )}
-    </div>
+    </Page>
   )
 }
 
