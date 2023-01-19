@@ -35,7 +35,7 @@ const BurgerMenu = () => {
         {links.map((linkProps) => (
           <li
             key={linkProps.href}
-            className="mr-4
+            className="mr-4 p-2
             text-xl md:my-0 my-7"
           >
             <Link className="text-white" {...linkProps} />
