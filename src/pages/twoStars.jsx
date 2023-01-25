@@ -1,4 +1,4 @@
-import CardCollectionSorting from "@/components/ CardCollectionSorting"
+import CardCollectionSorting from "@/components/CardCollectionSorting"
 
 const twoStars = () => {
   return CardCollectionSorting(2)
