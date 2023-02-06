@@ -4,11 +4,13 @@ import Link from "@/components/Link"
 import classNames from "classnames"
 
 const links = [
-  { children: "1 ⭐️", href: "/oneStars" },
-  { children: "2 ⭐️", href: "/twoStars" },
-  { children: "3 ⭐️", href: "/threeStars" },
-  { children: "4 ⭐️", href: "/fourStars" },
-  { children: "5 ⭐️", href: "/fiveStars" },
+  { children: "Card Collection", href: "/cardCollection" },
+  { children: "1 ⭐️", href: "/cardCollection/oneStars" },
+  { children: "2 ⭐️", href: "/cardCollection/twoStars" },
+  { children: "3 ⭐️", href: "/cardCollection/threeStars" },
+  { children: "4 ⭐️", href: "/cardCollection/fourStars" },
+  { children: "5 ⭐️", href: "/cardCollection/fiveStars" },
+  { children: "Deck", href: "/deckCollection" },
 ]
 
 const BurgerMenu = () => {

@@ -1,5 +1,7 @@
 import Page from "@/components/Page"
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid"
 import { Formik, Field, Form, ErrorMessage } from "formik"
+import { useState } from "react"
 import * as Yup from "yup"
 
 const validationSchema = Yup.object().shape({
@@ -18,6 +20,13 @@ const initialValues = {
 }
 
 const signUp = () => {
+  const [visible, setVisiblity] = useState(false)
+  const handleVisionOff = () => {
+    setVisiblity(true)
+  }
+  const handleVesionOn = () => {
+    setVisiblity(false)
+  }
   return (
     <Page>
       <div className="h-screen p-1 m-1 flex flex-col items-center rounded-md border-2 border-black bg-cover bg-no-repeat bg-center bg-[url('/background/ffxvi1.jpeg')]">
@@ -48,12 +57,23 @@ const signUp = () => {
               </div>
               <div className="flex flex-col">
                 <label className="text-white">Mot de passe :</label>
-                <Field
-                  type="password"
-                  id="password"
-                  name="password"
-                  className="border-2 border-black px-2 rounded"
-                />
+                <div className="flex items-center justify-between">
+                  <Field
+                    type={visible ? "text" : "password"}
+                    id="password"
+                    name="password"
+                    className="border-2 border-black px-2 rounded"
+                  />
+                  {visible ? (
+                    <span onClick={handleVesionOn}>
+                      <EyeIcon className="w-6 h-6 bg-white hover:cursor-pointer" />
+                    </span>
+                  ) : (
+                    <span onClick={handleVisionOff}>
+                      <EyeSlashIcon className="w-6 h-6 bg-white hover:cursor-pointer" />
+                    </span>
+                  )}
+                </div>
                 <ErrorMessage
                   name="password"
                   component="small"

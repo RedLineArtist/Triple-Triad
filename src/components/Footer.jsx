@@ -4,12 +4,12 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <div className="bg-blue-600 flex justify-between sticky bottom-0">
-      <Link href="/cardsCollection">
+      <Link href="/cardCollection/cardsCollection">
         <HomeIcon className="w-6 h-6" />
       </Link>
 
       <button>
-        <Link href="/">
+        <Link href="/settings">
           <Cog8ToothIcon className="w-6 h-6" />
         </Link>
       </button>
