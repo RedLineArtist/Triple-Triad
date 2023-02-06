@@ -26,9 +26,12 @@ const deckCollection = () => {
       {!deck ? (
         <h1>No Deck</h1>
       ) : (
-        <div>
-          {deck.map(({ icon, description }) => (
-            <img src={icon} key={icon} alt={description} />
+        <div className="flex justify-between">
+          {deck.map(({ image, name, id }) => (
+            <div key={id}>
+              <h2 className="p-1 m-1 text-xs">{name}</h2>
+              <img src={image} alt={name} />
+            </div>
           ))}
         </div>
       )}
