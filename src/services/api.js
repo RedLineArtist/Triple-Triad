@@ -1,5 +1,8 @@
+import config from "@/config.js"
+import axios from "axios"
+
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASEURL,
+  baseURL: config.api.baseUrl,
 })
 
 export default api

@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import { AppContextProvider } from "@/components/AppContext"
+import "../styles/globals.css"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({ Component: PageComponent, pageProps, ...otherProps }) => {
+  return (
+    <AppContextProvider isPublicPage={PageComponent.isPublic}>
+      <PageComponent {...pageProps} {...otherProps} />
+    </AppContextProvider>
+  )
 }
 
-export default MyApp
+export default App
